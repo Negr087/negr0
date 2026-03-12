@@ -238,175 +238,129 @@ export default function FuturisticLanding() {
         </div>
       </div>
       {/* Projects Section */}
-      <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 py-20">
-        <div className="max-w-6xl mx-auto">
-          {/* Section Title */}
+      <div className="relative z-10 px-4 py-20">
+        <div className="max-w-5xl mx-auto">
+          {/* Section Header */}
           <div className="text-center mb-16">
-            <h3 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-600 bg-clip-text text-transparent mb-4 tracking-wider font-poppins font-bold">
-              Mis proyectos
-            </h3>
-            <div className="h-1 w-48 bg-gradient-to-r from-transparent via-amber-500 to-transparent mx-auto" />
+            <div className="text-amber-500 text-xs font-poppins uppercase tracking-widest mb-3">Mis proyectos</div>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-poppins">
+              Algunos de mis proyectos
+            </h2>
+            <p className="text-gray-400 font-poppins max-w-xl mx-auto">Distintos proyectos, distintas tecnologías, cada uno con su esencia.</p>
+            <div className="h-px w-48 bg-gradient-to-r from-transparent via-amber-500 to-transparent mx-auto mt-6" />
           </div>
 
-          {/* Projects Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
-            {/* Nostr0 Project */}
-            <div className="group relative bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-amber-500/20 rounded-lg overflow-hidden hover:border-amber-500/50 transition-all duration-300">
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-amber-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          {/* Showcase Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-              <div className="relative p-6">
-                <div className="mb-4">
-                  <img
-                    src="/nostr0-screenshot.jpeg"
-                    alt="Nostr0 Client"
-                    className="w-full h-48 object-cover rounded-lg border border-amber-500/30"
-                  />
+            {/* nostr0 */}
+            <div className="group bg-gray-900/40 border border-amber-500/20 rounded-xl overflow-hidden hover:border-amber-500/50 transition-all duration-300 hover:-translate-y-1">
+              <div className="relative">
+                {/* Browser bar */}
+                <div className="bg-gray-900 px-4 py-2.5 flex items-center gap-2 border-b border-amber-500/20">
+                  <span className="w-3 h-3 rounded-full bg-red-500 shrink-0" />
+                  <span className="w-3 h-3 rounded-full bg-yellow-400 shrink-0" />
+                  <span className="w-3 h-3 rounded-full bg-green-500 shrink-0" />
+                  <span className="ml-2 text-gray-500 text-xs font-mono truncate">https://nostr0.vercel.app/</span>
                 </div>
-
-                <h3 className="text-2xl font-bold text-amber-400 mb-2 font-poppins font-bold">nostr0</h3>
-                <p className="text-gray-300 mb-4 text-sm">Cliente de Nostr moderno para buscar eventos</p>
-
-                <div className="flex items-center justify-between">
-                  <span className="text-xs text-amber-500 font-poppins font-medium">NOSTR CLIENT</span>
-                  <a
-                    href="https://nostr0.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-gradient-to-r from-amber-500 to-yellow-500 text-black px-4 py-2 rounded-full text-sm font-semibold hover:from-amber-400 hover:to-yellow-400 transition-all duration-300"
-                  >
-                    Ver Proyecto
-                  </a>
+                {/* Screenshot */}
+                <div className="relative h-52 overflow-hidden bg-gray-950">
+                  <img src="/nostr0-screenshot.jpeg" alt="nostr0" className="w-full h-full object-cover object-top" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
+              </div>
+              <div className="p-5">
+                <div className="text-xs text-amber-500 font-poppins uppercase tracking-widest mb-2">NOSTR CLIENT</div>
+                <h3 className="text-lg font-bold text-white mb-2 font-poppins">nostr0</h3>
+                <p className="text-gray-400 text-sm mb-4">Cliente de Nostr moderno para buscar eventos.</p>
+                <a href="https://nostr0.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  className="inline-block bg-gradient-to-r from-amber-500 to-yellow-500 text-black px-5 py-2 rounded-full text-sm font-semibold hover:from-amber-400 hover:to-yellow-400 transition-all duration-300">
+                  Ver Proyecto
+                </a>
               </div>
             </div>
 
-            {/* Bitcoin Pizza Day Project */}
-            <div className="group relative bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-amber-500/20 rounded-lg overflow-hidden hover:border-amber-500/50 transition-all duration-300">
-              <div className="absolute inset-0 bg-gradient-to-br from-orange-900/20 to-amber-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
-              <div className="relative p-6">
-                <div className="mb-4 h-48 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-lg border border-amber-500/30 flex items-center justify-center p-4">
-                  <img
-                    src="/bitcoin-pizza-logo.png"
-                    alt="Bitcoin Pizza Day Logo"
-                    className="max-w-full max-h-full object-contain"
-                  />
+            {/* Bitcoin Pizza Day */}
+            <div className="group bg-gray-900/40 border border-amber-500/20 rounded-xl overflow-hidden hover:border-amber-500/50 transition-all duration-300 hover:-translate-y-1">
+              <div className="relative">
+                <div className="bg-gray-900 px-4 py-2.5 flex items-center gap-2 border-b border-amber-500/20">
+                  <span className="w-3 h-3 rounded-full bg-red-500 shrink-0" />
+                  <span className="w-3 h-3 rounded-full bg-yellow-400 shrink-0" />
+                  <span className="w-3 h-3 rounded-full bg-green-500 shrink-0" />
+                  <span className="ml-2 text-gray-500 text-xs font-mono truncate">https://v0-bitcoin-pizza-countdown.vercel.app/</span>
                 </div>
-
-                <h3 className="text-2xl font-bold text-amber-400 mb-2 font-poppins font-bold">Bitcoin Pizza Day</h3>
-                <p className="text-gray-300 mb-4 text-sm">
-                  Cuenta regresiva para el día de la pizza de Bitcoin. Conmemorando la primera transacción comercial de
-                  BTC.
-                </p>
-
-                <div className="flex items-center justify-between">
-                  <span className="text-xs text-amber-500 font-poppins font-medium">BITCOIN TRIBUTE</span>
-                  <a
-                    href="https://v0-bitcoin-pizza-countdown.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-gradient-to-r from-amber-500 to-yellow-500 text-black px-4 py-2 rounded-full text-sm font-semibold hover:from-amber-400 hover:to-yellow-400 transition-all duration-300"
-                  >
-                    Ver Proyecto
-                  </a>
+                <div className="relative h-52 overflow-hidden bg-gradient-to-br from-orange-950 to-amber-950 flex items-center justify-center">
+                  <img src="/bitcoin-pizza-logo.png" alt="Bitcoin Pizza Day" className="h-36 w-auto object-contain drop-shadow-2xl" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
+              </div>
+              <div className="p-5">
+                <div className="text-xs text-amber-500 font-poppins uppercase tracking-widest mb-2">BITCOIN TRIBUTE</div>
+                <h3 className="text-lg font-bold text-white mb-2 font-poppins">Bitcoin Pizza Day</h3>
+                <p className="text-gray-400 text-sm mb-4">Cuenta regresiva conmemorando la primera transacción comercial de BTC.</p>
+                <a href="https://v0-bitcoin-pizza-countdown.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  className="inline-block bg-gradient-to-r from-amber-500 to-yellow-500 text-black px-5 py-2 rounded-full text-sm font-semibold hover:from-amber-400 hover:to-yellow-400 transition-all duration-300">
+                  Ver Proyecto
+                </a>
               </div>
             </div>
 
-            {/* Novasteel Project */}
-            <div className="group relative bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-amber-500/20 rounded-lg overflow-hidden hover:border-amber-500/50 transition-all duration-300">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-amber-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
-              <div className="relative p-6">
-                <div className="mb-4 h-48 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg border border-amber-500/30 flex items-center justify-center p-4">
-                  <img
-                    src="/novasteel-logo.jpeg"
-                    alt="Novasteel Logo"
-                    className="max-w-full max-h-full object-contain"
-                  />
+            {/* Novasteel */}
+            <div className="group bg-gray-900/40 border border-amber-500/20 rounded-xl overflow-hidden hover:border-amber-500/50 transition-all duration-300 hover:-translate-y-1">
+              <div className="relative">
+                <div className="bg-gray-900 px-4 py-2.5 flex items-center gap-2 border-b border-amber-500/20">
+                  <span className="w-3 h-3 rounded-full bg-red-500 shrink-0" />
+                  <span className="w-3 h-3 rounded-full bg-yellow-400 shrink-0" />
+                  <span className="w-3 h-3 rounded-full bg-green-500 shrink-0" />
+                  <span className="ml-2 text-gray-500 text-xs font-mono truncate">https://novasteel-page.vercel.app/</span>
                 </div>
-
-                <h3 className="text-2xl font-bold text-amber-400 mb-2 font-poppins font-bold">Novasteel</h3>
-                <p className="text-gray-300 mb-4 text-sm">Plataforma moderna y elegante administrativa de novasteel</p>
-
-                <div className="flex items-center justify-between">
-                  <span className="text-xs text-amber-500 font-poppins font-medium">WEB PLATFORM</span>
-                  <a
-                    href="https://novasteel.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-gradient-to-r from-amber-500 to-yellow-500 text-black px-4 py-2 rounded-full text-sm font-semibold hover:from-amber-400 hover:to-yellow-400 transition-all duration-300"
-                  >
-                    Ver Proyecto
-                  </a>
+                <div className="relative h-52 overflow-hidden bg-gradient-to-br from-blue-950 to-gray-950 flex items-center justify-center">
+                  <img src="/novasteel-logo.jpeg" alt="Novasteel" className="h-28 w-auto object-contain drop-shadow-2xl rounded-lg" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
+              </div>
+              <div className="p-5">
+                <div className="text-xs text-amber-500 font-poppins uppercase tracking-widest mb-2">WEB PLATFORM</div>
+                <h3 className="text-lg font-bold text-white mb-2 font-poppins">Novasteel</h3>
+                <p className="text-gray-400 text-sm mb-4">Plataforma moderna y elegante administrativa de Novasteel.</p>
+                <a href="https://novasteel-page.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  className="inline-block bg-gradient-to-r from-amber-500 to-yellow-500 text-black px-5 py-2 rounded-full text-sm font-semibold hover:from-amber-400 hover:to-yellow-400 transition-all duration-300">
+                  Ver Proyecto
+                </a>
               </div>
             </div>
 
-            {/* negr0.lol Project */}
-            <div className="group relative bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-amber-500/20 rounded-lg overflow-hidden hover:border-amber-500/50 transition-all duration-300">
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-green-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
-              <div className="relative p-6">
-                <div className="mb-4">
-                  <img
-                    src="/negr0-lol-screenshot.jpeg"
-                    alt="negr0.lol Nostr Wallet"
-                    className="w-full h-48 object-cover rounded-lg border border-amber-500/30"
-                  />
+            {/* Bitcoin Ordinals */}
+            <div className="group bg-gray-900/40 border border-amber-500/20 rounded-xl overflow-hidden hover:border-amber-500/50 transition-all duration-300 hover:-translate-y-1">
+              <div className="relative">
+                <div className="bg-gray-900 px-4 py-2.5 flex items-center gap-2 border-b border-amber-500/20">
+                  <span className="w-3 h-3 rounded-full bg-red-500 shrink-0" />
+                  <span className="w-3 h-3 rounded-full bg-yellow-400 shrink-0" />
+                  <span className="w-3 h-3 rounded-full bg-green-500 shrink-0" />
+                  <span className="ml-2 text-gray-500 text-xs font-mono truncate">https://ordinals.com/</span>
                 </div>
-
-                <h3 className="text-2xl font-bold text-amber-400 mb-2 font-poppins font-bold">negr0.lol</h3>
-                <p className="text-gray-300 mb-4 text-sm">Nostr Wallet. Crea tu wallet en pocos segundos</p>
-
-                <div className="flex items-center justify-between">
-                  <span className="text-xs text-amber-500 font-poppins font-medium">WALLET</span>
-                  <a
-                    href="https://web.negr0.lol/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-gradient-to-r from-amber-500 to-yellow-500 text-black px-4 py-2 rounded-full text-sm font-semibold hover:from-amber-400 hover:to-yellow-400 transition-all duration-300"
-                  >
-                    Ver Proyecto
-                  </a>
+                <div className="relative h-52 overflow-hidden bg-gradient-to-br from-orange-950 to-yellow-950 flex items-center justify-center">
+                  <div className="text-8xl font-bold text-amber-400/80 drop-shadow-2xl select-none">₿</div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
+              </div>
+              <div className="p-5">
+                <div className="text-xs text-amber-500 font-poppins uppercase tracking-widest mb-2">BITCOIN NFT</div>
+                <h3 className="text-lg font-bold text-white mb-2 font-poppins">Bitcoin Ordinals</h3>
+                <p className="text-gray-400 text-sm mb-4">Artefacto digital único inscrito en la blockchain de Bitcoin.</p>
+                <a href="https://ordinals.com/content/199aa16a3b4dd3882f16c1a735a29caf640b5732a76724c07996fd7e97385fc0i0" target="_blank" rel="noopener noreferrer"
+                  className="inline-block bg-gradient-to-r from-amber-500 to-yellow-500 text-black px-5 py-2 rounded-full text-sm font-semibold hover:from-amber-400 hover:to-yellow-400 transition-all duration-300">
+                  Ver Ordinal
+                </a>
               </div>
             </div>
 
-            {/* Bitcoin Ordinals Project */}
-            <div className="group relative bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-amber-500/20 rounded-lg overflow-hidden hover:border-amber-500/50 transition-all duration-300">
-              <div className="absolute inset-0 bg-gradient-to-br from-orange-900/20 to-yellow-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
-              <div className="relative p-6">
-                <div className="mb-4 h-48 bg-gradient-to-br from-orange-500/20 to-yellow-500/20 rounded-lg border border-amber-500/30 flex items-center justify-center">
-                  <div className="text-6xl">₿</div>
-                </div>
-
-                <h3 className="text-2xl font-bold text-amber-400 mb-2 font-poppins font-bold">Bitcoin Ordinals</h3>
-                <p className="text-gray-300 mb-4 text-sm">
-                  Artefacto digital único inscrito en la blockchain de Bitcoin. Colección de arte digital
-                  descentralizado.
-                </p>
-
-                <div className="flex items-center justify-between">
-                  <span className="text-xs text-amber-500 font-poppins font-medium">BITCOIN NFT</span>
-                  <a
-                    href="https://ordinals.com/content/199aa16a3b4dd3882f16c1a735a29caf640b5732a76724c07996fd7e97385fc0i0"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-gradient-to-r from-amber-500 to-yellow-500 text-black px-4 py-2 rounded-full text-sm font-semibold hover:from-amber-400 hover:to-yellow-400 transition-all duration-300"
-                  >
-                    Ver Ordinal
-                  </a>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Bottom decoration */}
           <div className="flex items-center justify-center mt-16">
             <div className="h-px w-16 bg-gradient-to-r from-transparent to-amber-500" />
-            <span className="mx-4 text-amber-500 text-sm font-poppins"></span>
+            <span className="mx-4 text-amber-500 text-xs font-poppins">PROJECTS</span>
             <div className="h-px w-16 bg-gradient-to-l from-transparent to-amber-500" />
           </div>
         </div>
