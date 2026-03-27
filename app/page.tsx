@@ -470,6 +470,31 @@ export default function FuturisticLanding() {
                 </div>
               </div>
 
+              {/* Proyectos Arquitectónicos */}
+              <div className="group bg-gray-900/40 border border-cyan-500/20 rounded-xl overflow-hidden hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1">
+                <div className="relative">
+                  <div className="bg-gray-900 px-4 py-2.5 flex items-center gap-2 border-b border-cyan-500/20">
+                    <span className="w-3 h-3 rounded-full bg-red-500 shrink-0" />
+                    <span className="w-3 h-3 rounded-full bg-cyan-400 shrink-0" />
+                    <span className="w-3 h-3 rounded-full bg-green-500 shrink-0" />
+                    <span className="ml-2 text-gray-500 text-xs font-mono truncate">https://proyectosarquitectonicos.vercel.app/</span>
+                  </div>
+                  <div className="relative h-52 overflow-hidden bg-gray-950">
+                    <img src="/tonchi.png" alt="Proyectos Arquitectónicos" className="w-full h-full object-cover object-top" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+                </div>
+                <div className="p-5">
+                  <div className="text-xs text-cyan-500 font-poppins uppercase tracking-widest mb-2">ARQUITECTURA</div>
+                  <h3 className="text-lg font-bold text-white mb-2 font-poppins">Proyectos Arquitectónicos</h3>
+                  <p className="text-gray-400 text-sm mb-4">Portfolio de proyectos y diseños arquitectónicos.</p>
+                  <a href="https://proyectosarquitectonicos.vercel.app/" target="_blank" rel="noopener noreferrer"
+                    className="inline-block bg-gradient-to-r from-cyan-500 to-cyan-400 text-black px-5 py-2 rounded-full text-sm font-semibold hover:from-cyan-400 hover:to-cyan-300 transition-all duration-300">
+                    Ver Proyecto
+                  </a>
+                </div>
+              </div>
+
             </div>
           </div>
 
